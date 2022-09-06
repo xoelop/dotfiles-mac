@@ -1,0 +1,21 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.btt_autoload_preset.json: 
+      path: btt_autoload_preset.json
+      force: true
+    # ~/.tmux.conf: tmux.conf
+#     ~/.vim: vim
+#     ~/.vimrc: vimrc
+
+# - create:
+    # - ~/downloads
+    # - ~/.vim/undo-history
+
+# - shell:
+  # - [git submodule update --init --recursive, Installing submodules]
