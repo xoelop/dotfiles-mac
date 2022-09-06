@@ -1,0 +1,27 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+#	name = Xoel López Barata
+#	email = xoel@MacBook-Pro-de-Xoel.local
+[user]
+	name = Xoel López Barata
+	email = 8508402+xoelop@users.noreply.github.com
+[github]
+	user = xoelop
+[credential]
+	helper = osxkeychain
+[core]
+	excludesfile = /Users/xoel/.gitignore_global
+	editor = code
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[commit]
+	template = /Users/xoel/.stCommitMsg
+[http]
+	postBuffer = 1048576000
+[includeIf "gitdir:~/CODE/Tinybird/non_public/"]
+	path = ~/CODE/Tinybird/non_public/.gitconfig
