@@ -12,6 +12,9 @@
     ~/.gitconfig:
       path: gitconfig
       force: true
+    ~/.zshrc: 
+      path: zshrc
+      force: true
     # ~/.tmux.conf: tmux.conf
 #     ~/.vim: vim
 #     ~/.vimrc: vimrc
@@ -20,5 +23,9 @@
     # - ~/downloads
     # - ~/.vim/undo-history
 
-# - shell:
+- shell:
   # - [git submodule update --init --recursive, Installing submodules]
+    -
+      command: ./setup_homebrew.sh
+      stdout: true
+      stderr: true
