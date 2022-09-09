@@ -22,6 +22,19 @@ brew install --cask authy
 brew install --cask bettertouchtool
 brew install --cask clipy
 brew install --cask zappy
+brew install --cask postman
+brew install --cask slack
+
+
+brew install postgresql@14
+
+brew install --cask dbeaver-community
+
+
+brew install pyenv
+brew install ruby
+
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 
 
 # install fzf

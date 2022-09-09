@@ -75,7 +75,10 @@ DISABLE_MAGIC_FUNCTIONS="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(
+    git
+    zsh-autosuggestions
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -104,6 +107,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias p=python
 
 # heroku autocomplete setup
 HEROKU_AC_ZSH_SETUP_PATH=/Users/xoel/Library/Caches/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH
@@ -111,7 +115,20 @@ HEROKU_AC_ZSH_SETUP_PATH=/Users/xoel/Library/Caches/heroku/autocomplete/zsh_setu
 # fzf autocomplete
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# heroku autocomplete setup
-HEROKU_AC_ZSH_SETUP_PATH=/Users/xoel/Library/Caches/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;
-# heroku autocomplete setup
-HEROKU_AC_ZSH_SETUP_PATH=/Users/xoel/Library/Caches/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;
+
+# so that gems are not installed globally
+export GEM_HOME="$HOME/.gem"
+
+# add GEM_HOME to path
+export PATH="$HOME/.gem/bin:$PATH"
+
+# so that ruby means this ruby and not the system ruby
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+
+
+
+PATH="/Users/xoel/perl5/bin${PATH:+:${PATH}}"; export PATH;
+PERL5LIB="/Users/xoel/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="/Users/xoel/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"/Users/xoel/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/Users/xoel/perl5"; export PERL_MM_OPT;
