@@ -15,6 +15,9 @@
     ~/.zshrc: 
       path: zshrc
       force: true
+    ~/.p10k.zsh: 
+      path: p10k.zsh
+      force: true
     # ~/.tmux.conf: tmux.conf
 #     ~/.vim: vim
 #     ~/.vimrc: vimrc

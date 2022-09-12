@@ -12,6 +12,9 @@ brew install fzf
 echo '\n <<< Installing oh my zsh >>> \n'
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
+brew install romkatv/powerlevel10k/powerlevel10k
+
+
 
 brew tap heroku/brew && brew install heroku
 brew install tree
@@ -25,6 +28,8 @@ brew install --cask zappy
 brew install --cask postman
 brew install --cask slack
 
+brew install thefuck
+
 
 brew install postgresql@14
 
@@ -33,6 +38,7 @@ brew install --cask dbeaver-community
 
 brew install pyenv
 brew install ruby
+
 
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 
@@ -45,10 +51,5 @@ $(brew --prefix)/opt/fzf/install # doesn't work
 
 
 # heroku autocomplete
-heroku autocomplete
-printf "$(heroku autocomplete:script zsh)" >> ~/.zshrc; source ~/.zshrc
-
-
-
 
 echo '\n <<< Homebrew setup complete >>> \n'
