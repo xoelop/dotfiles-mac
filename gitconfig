@@ -11,7 +11,7 @@
 [credential]
 	helper = osxkeychain
 [core]
-	excludesfile = /Users/xoel/.gitignore_global
+	excludesfile = gitignore-global
 	editor = code
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
