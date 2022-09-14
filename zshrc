@@ -89,6 +89,7 @@ DISABLE_MAGIC_FUNCTIONS="true"
 plugins=(
     git
     zsh-autosuggestions
+    env
 )
 
 source $ZSH/oh-my-zsh.sh

@@ -43,6 +43,8 @@ brew install ruby
 
 
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+git clone https://github.com/johnhamelink/env-zsh.git ~/.oh-my-zsh/custom/plugins/env
+
 
 
 # install fzf
