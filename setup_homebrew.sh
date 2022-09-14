@@ -27,6 +27,8 @@ brew install --cask clipy
 brew install --cask zappy
 brew install --cask postman
 brew install --cask slack
+brew install --cask opera
+
 
 brew install thefuck
 
