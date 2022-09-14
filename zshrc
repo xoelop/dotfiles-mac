@@ -155,3 +155,8 @@ PERL_MM_OPT="INSTALL_BASE=/Users/xoel/perl5"; export PERL_MM_OPT;
 
 # add fuck 
 eval $(thefuck --alias)
+
+# setup pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"

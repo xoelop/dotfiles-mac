@@ -32,6 +32,10 @@ brew install --cask opera
 
 brew install thefuck
 
+# git hooks
+brew install pre-commit
+pre-commit install
+
 
 brew install postgresql@14
 
