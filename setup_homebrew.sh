@@ -31,7 +31,13 @@ brew install --cask opera
 brew install --cask aldente
 
 
+curl -fsSL https://get.telebit.io | bash
+
 brew install thefuck
+
+brew install wget
+brew install parallel
+
 
 # git hooks
 brew install pre-commit
@@ -45,6 +51,7 @@ brew install --cask dbeaver-community
 
 brew install pyenv
 brew install ruby
+brew install jq
 
 
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
